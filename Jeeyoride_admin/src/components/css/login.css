@@ -1,0 +1,594 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.right-container__label {
+  color: white;
+}
+div.dt-container .dt-paging .dt-paging-button.disabled,
+div.dt-container .dt-paging .dt-paging-button.disabled:hover {
+  color: yellow !important;
+  border: 1px solid oklch(78.5% 0.115 274.713) !important;
+}
+div.dt-container .dt-paging .dt-paging-button.disabled,
+div.dt-container .dt-paging .dt-paging-button.disabled {
+  color: white !important;
+  border: 1px solid oklch(78.5% 0.115 274.713) !important;
+}
+.headercard {
+  margin-top: 100px;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 0 5px #faf7f7;
+  background: rgb(8, 16, 40);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 0px 0px 0px;
+  border-radius: 20px;
+  border-style: outset;
+}
+.headercard h4 {
+  color: white;
+}
+.headercard span {
+  color: white;
+  margin-left: 10px !important;
+  font-size: 20px;
+  margin-top: 40px !important;
+}
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #0d0d33, #000);
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.form-container h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.right-container__p {
+  opacity: 0.5;
+  margin: 5px 0 10px;
+}
+.form-container input {
+  width: 350px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #fff;
+}
+.form-container input:focus {
+  outline: none;
+}
+.form-container label {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.form-container bottom-text {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.form-container bottom-text > strong {
+  color: #fff;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.toggle-container {
+  margin: 24px 0;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-box {
+  appearance: none;
+  width: 32px;
+  height: 16px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  position: relative;
+}
+.toggle-box:checked {
+  background-color: #30a2ff;
+}
+.toggle-box:checked::after {
+  transform: translateX(16px);
+  transition: 0.4s ease-in-out;
+}
+.toggle-box::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.login-btn {
+  background-color: #30a2ff;
+  border: 1px solid #30a2ff;
+  width: 350px;
+  border-radius: 20px;
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.right-container__box {
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------Datatable Responsive------------- */
+
+.child-row {
+  background-color: #f9f9f9;
+  font-style: italic;
+}
+.details-column {
+  padding: 10px;
+}
+/* -------------------------Other Pages Css---------------- */
+
+.view-btn {
+  background: none;
+  border: 1px solid white;
+  padding: 7px 0px 5px 0px;
+  border-radius: 5px;
+}
+.viewbtn {
+  background: none;
+  border: 1px solid white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+.viewbtn i {
+  color: cyan;
+}
+.view-btn:hover {
+  background: none;
+}
+.active {
+  background-color: #227522;
+  padding: 4px 7px 5px 7px;
+  border-radius: 10px;
+}
+.inactive {
+  background-color: red;
+  padding: 2px 5px 5px 5px;
+  border-radius: 10px;
+}
+.active1 {
+  background-color: #227522;
+  padding: 4px 7px 5px 7px;
+  border-radius: 10px;
+}
+.inactive1 {
+  background-color: red;
+  padding: 2px 5px 5px 5px;
+  border-radius: 10px;
+}
+.dtr-data a {
+  color: white !important;
+}
+.btn-icon {
+  border: 1px solid red;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.btn-icon1 {
+  border: 1px solid green;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.btn-icon2 {
+  border: 1px solid blue;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Table Styling */
+.popuptable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.popuptable th,
+.popuptable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  font-weight: bold;
+}
+
+.popuptable th {
+  font-weight: bold;
+}
+textarea {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.popsubmitbtn {
+  width: 100px;
+  margin-top: 5px;
+}
+.popuptitle {
+  float: left;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* --------------------Notification Form----------------------- */
+
+/* SendNotification.css */
+
+.notificationcard {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+}
+
+.notificationcard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.notificationcard input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: -15px;
+  color: #000;
+}
+
+.notificationcard button {
+  padding: 10px 15px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.notificationcard select {
+  height: 35px;
+  border-radius: 10px;
+  margin-top: -15px;
+  padding: 2px;
+}
+.notificationcard h4 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.notificationcard textarea {
+  margin-top: 0px;
+}
+.notificationcard label {
+  margin-top: -5px;
+  font-size: 14px;
+}
+
+#example .fa-edit {
+  color: cyan;
+  /* border: 1px solid #8f5fe8; */
+  margin: 5px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#example .dicon {
+  color: red;
+  border: 1px solid white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.publish {
+  background: green;
+  padding: 5px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  color: white;
+}
+.Unpublish {
+  background: red;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* --------------Site Setting--------------- */
+
+.sitesetting {
+  max-width: auto;
+  margin: 30px auto;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sitesetting form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: auto;
+}
+
+.sitesetting input {
+  background-color: #0c1a32;
+  border-color: #ffffff1f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #b5b5c3;
+  height: 35px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  padding: 10px;
+}
+
+.sitesetting button {
+  padding: 10px 15px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.sitesetting select {
+  height: 35px;
+  border-radius: 10px;
+  margin-top: -15px;
+  padding: 2px;
+}
+.sitesetting h4 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.sitesetting textarea {
+  margin-top: 0px;
+}
+.sitesetting label {
+  margin-top: -5px;
+  font-size: 14px;
+  color: white;
+}
+.sitesetting .updatebtn {
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.sitesetting .cancalbtn {
+  width: 100px;
+  background: #8f5fe8 !important;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.inputfile {
+  height: 45px !important;
+}
+.activebtn {
+  background: green;
+  padding: 10px;
+  border-radius: 10px;
+  color: white !important;
+}
+.inactivebtn {
+  background: red;
+  padding: 10px;
+  border-radius: 10px;
+  color: white !important;
+}
+.addcity {
+  float: right;
+  background: cyan;
+  border-radius: 15px;
+  color: black !important;
+  padding: 5px 10px 5px 10px;
+  margin-right: 10px;
+  border: 1px solid rgb(8, 16, 40);
+  margin-bottom: 10px;
+}
+.text-end {
+  margin-top: -55px;
+}
+table.dataTable tbody td {
+  padding: 11px 12px !important;
+}
+
+/* Center the form container */
+.citycard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styling */
+.citycard {
+  border: 1px solid white;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Input field full width */
+.citycard input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+.addcitybtn {
+  background: cyan;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  color: black;
+  margin-top: 10px;
+}
+.cardcity {
+  width: 500px;
+}
+.cardcitymain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.fare-form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  max-width: auto; /* adjust as needed */
+  margin: 0 auto;
+}
+.notificationbtn {
+  background-color: unset !important;
+  color: red;
+  border: 2px solid oklch(78.5% 0.115 274.713) !important;
+}
+.input-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.overflow-x-auto {
+  overflow-x: unset !important;
+}
+.input-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: white;
+}
+
+.input-field input {
+  background-color: #0c1a32;
+  border-color: #ffffff1f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #b5b5c3;
+  height: 35px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: cyan;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  max-width: 150px;
+  align-self: flex-start;
+  color: black;
+}
+
+button:hover {
+  background-color: cyan;
+}
+
+.form-card {
+  border: 1px solid white;
+  width: 100%;
+  max-width: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.respondmessage {
+  color: white;
+}
+.inputlabel {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.chckout-card input {
+  background-color: #0c1a32;
+  border-color: #ffffff1f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #b5b5c3;
+  height: 35px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.chckout-card select {
+  background-color: #0c1a32;
+  border-color: #ffffff1f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #b5b5c3;
+  height: 35px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
