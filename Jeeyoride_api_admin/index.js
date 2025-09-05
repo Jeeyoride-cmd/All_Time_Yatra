@@ -50,8 +50,25 @@ const PORT = 4000;
 //
 // app.use(cors());
 app.use(helmet());
+
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// CORS
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://your-frontend-domain.com"],
+    methods: ["GET", "POST", "PUT", "PATCH"],
+    credentials: true,
+    allowedHeaders: ["Content-Type"],
+  })
+);
 
 const session = require("express-session");
 
@@ -120,6 +137,4 @@ app.use("/api", notificationRoutes);
 app.use("/api", driverUserRoutes);
 app.use("/api", driverBookingRoutes);
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+module.exports = app;
